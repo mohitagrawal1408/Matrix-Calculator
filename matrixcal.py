@@ -5,7 +5,7 @@ print("============================================\n")
 print("--- 1. Set Up Matrix A ---")
 while True:
     try:
-        rows_A= nt(input("Enter the number of rows for Matrix A: "))
+        rows_A=int(input("Enter the number of rows for Matrix A: "))
         cols_A=int(input("Enter the number of columns for Matrix A: "))
         break
     except ValueError:
