@@ -97,7 +97,7 @@ if(do_combined==1):
         do_inverse_B=do_determinant_B=do_add=do_subtract=do_multiply=do_transpose_B=do_identical=0
     if (do_inverse_B==1):
         if(is_B_square ,abs(determinant_B) > 1e-9):
-            matrix_inv_B=np.linalg.inv(matrix_B)
+            matrix_inv_B=np.linalg.det(matrix_B)
             print("The Inverse of Matrix B is:")
             print(matrix_inv_B)
         else:
